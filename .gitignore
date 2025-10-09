@@ -22,6 +22,15 @@ yarn-error.log*
 # vercel
 .vercel
 
+
+.codacy
+
+.next
+
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#Ignore vscode AI rules
+.github

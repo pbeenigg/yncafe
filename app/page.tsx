@@ -335,40 +335,37 @@ export default function Page() {
           <p className="text-base sm:text-lg text-amber-700">探索云南精品咖啡的多样风味与品牌故事</p>
         </div>
 
-        <Card className="mb-8 shadow-lg border-amber-200">
-          <CardContent className="pt-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Select value={selectedVariety} onValueChange={setSelectedVariety}>
-                <SelectTrigger className="h-12">
-                  <SelectValue placeholder="选择咖啡品种" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">全部品种</SelectItem>
-                  {varieties.map((v) => (
-                    <SelectItem key={v} value={v}>
-                      {v}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-              <Select value={selectedOrigin} onValueChange={setSelectedOrigin}>
-                <SelectTrigger className="h-12">
-                  <SelectValue placeholder="选择产地" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">全部产地</SelectItem>
-                  {origins_list.map((o) => (
-                    <SelectItem key={o} value={o}>
-                      {o}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          </CardContent>
-        </Card>
-
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900">咖啡品牌 ({filteredBrands.length})</h2>
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">咖啡品牌 ({filteredBrands.length})</h2>
+          <div className="grid grid-cols-1 gap-4 sm:flex sm:flex-row sm:justify-end sm:gap-3">
+            <Select value={selectedVariety} onValueChange={setSelectedVariety}>
+              <SelectTrigger className="h-12 sm:min-w-[200px]">
+                <SelectValue placeholder="选择咖啡品种" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">全部品种</SelectItem>
+                {varieties.map((v) => (
+                  <SelectItem key={v} value={v}>
+                    {v}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <Select value={selectedOrigin} onValueChange={setSelectedOrigin}>
+              <SelectTrigger className="h-12 sm:min-w-[200px]">
+                <SelectValue placeholder="选择产地" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">全部产地</SelectItem>
+                {origins_list.map((o) => (
+                  <SelectItem key={o} value={o}>
+                    {o}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
           {filteredBrands.map((brand, index) => (
             <Card key={index} className="hover:shadow-xl transition-shadow border-amber-100">
