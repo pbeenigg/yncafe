@@ -12,7 +12,7 @@ const coffeeBrands = [
     variety: "卡蒂姆",
     channel: "商超、批发市场",
     series: "大众系列、黑钻系列",
-    price: "30-150",
+    price: "60-300",
     processing: "水洗",
     origin: "德宏芒市",
     export: "国内为主",
@@ -22,7 +22,7 @@ const coffeeBrands = [
     variety: "铁皮卡、波旁",
     channel: "天猫、淘宝、线下门店",
     series: "激情峡谷、冠军豆",
-    price: "150-300",
+    price: "80-300",
     processing: "水洗、日晒",
     origin: "云南保山高黎贡山",
     export: "国内精品、欧洲、北美",
@@ -32,7 +32,7 @@ const coffeeBrands = [
     variety: "卡蒂姆、波旁",
     channel: "淘宝、小程序、线下",
     series: "橡木桶发酵、蓝山风味",
-    price: "80-180",
+    price: "60-180",
     processing: "水洗、蜜处理",
     origin: "云南普洱澜沧县",
     export: "东南亚、欧洲",
@@ -52,7 +52,7 @@ const coffeeBrands = [
     variety: "卡蒂姆、铁皮卡",
     channel: "天猫官方店、京东",
     series: "精品单品、拼配豆",
-    price: "75-150",
+    price: "40-150",
     processing: "水洗、蜜处理",
     origin: "云南普洱澜沧江产区",
     export: "国内为主",
@@ -62,7 +62,7 @@ const coffeeBrands = [
     variety: "波旁、卡蒂姆",
     channel: "淘宝、专卖店、小红书",
     series: "庄园级单品",
-    price: "100-300",
+    price: "80-300",
     processing: "日晒、蜜处理",
     origin: "云南临沧沧源县",
     export: "国内精品、欧洲市场",
@@ -82,7 +82,7 @@ const coffeeBrands = [
     variety: "波旁、卡蒂姆",
     channel: "天猫、京东",
     series: "单品豆、挂耳",
-    price: "140-240",
+    price: "80-240",
     processing: "水洗、蜜处理",
     origin: "云南普洱",
     export: "欧洲、北美、东南亚",
@@ -92,7 +92,7 @@ const coffeeBrands = [
     variety: "卡蒂姆",
     channel: "各大电商平台",
     series: "速溶咖啡",
-    price: "100-200",
+    price: "40-200",
     processing: "水洗",
     origin: "云南普洱、保山",
     export: "全球市场，主要出口欧洲、北美",
@@ -102,7 +102,7 @@ const coffeeBrands = [
     variety: "卡蒂姆、波旁",
     channel: "星巴克门店、天猫",
     series: "云南咖啡豆",
-    price: "300-500",
+    price: "80-500",
     processing: "水洗",
     origin: "云南普洱",
     export: "全球星巴克门店，主要出口北美、欧洲",
@@ -112,7 +112,7 @@ const coffeeBrands = [
     variety: "铁皮卡、波旁",
     channel: "天猫、京东",
     series: "精品单品",
-    price: "160-275",
+    price: "100-275",
     processing: "水洗、日晒",
     origin: "云南临沧",
     export: "欧洲、北美、澳大利亚",
@@ -122,7 +122,7 @@ const coffeeBrands = [
     variety: "铁皮卡、波旁、瑰夏",
     channel: "工厂直销、淘宝、实体店",
     series: "巧克力盛宴、花木兰、越蓝山",
-    price: "180-320",
+    price: "80-320",
     processing: "水洗、日晒",
     origin: "云南保山",
     export: "韩国、日本、欧美高端市场",
@@ -142,7 +142,7 @@ const coffeeBrands = [
     variety: "多种品种",
     channel: "淘宝、实体店",
     series: "深烘系列、中烘系列",
-    price: "150-280",
+    price: "80-280",
     processing: "水洗、蜜处理",
     origin: "云南普洱",
     export: "国内为主，少量出口欧洲",
@@ -152,7 +152,7 @@ const coffeeBrands = [
     variety: "波旁、卡蒂姆",
     channel: "淘宝、实体店",
     series: "普洱波旁系列",
-    price: "100-180",
+    price: "60-180",
     processing: "水洗",
     origin: "云南普洱",
     export: "国内为主，少量出口东南亚",
@@ -162,7 +162,7 @@ const coffeeBrands = [
     variety: "多种品种",
     channel: "淘宝、实体店",
     series: "精品系列",
-    price: "150-280",
+    price: "80-280",
     processing: "水洗、蜜处理",
     origin: "云南保山",
     export: "国内为主，少量出口日韩",
@@ -182,7 +182,7 @@ const coffeeBrands = [
     variety: "波旁",
     channel: "微信小程序、线下体验店",
     series: "普洱波邦、手冲精品豆",
-    price: "120-220",
+    price: "80-220",
     processing: "水洗",
     origin: "普洱戴家巷三笆箩庄园",
     export: "国内精品，少量出口日韩",
@@ -192,7 +192,7 @@ const coffeeBrands = [
     variety: "卡蒂姆",
     channel: "淘宝店、线下庄园直购",
     series: "保山黄蜜日晒",
-    price: "180-320",
+    price: "80-320",
     processing: "黄蜜日晒",
     origin: "保山新寨村",
     export: "国内高端市场，少量出口欧美",
@@ -222,7 +222,7 @@ const coffeeBrands = [
     variety: "萨奇姆、卡蒂姆",
     channel: "淘宝旗舰店、庄园直营",
     series: "临沧沧江1号、萨奇姆",
-    price: "160-280",
+    price: "80-280",
     processing: "水洗、蜜处理",
     origin: "临沧秋珀庄园",
     export: "国内精品，少量出口欧美",
@@ -465,10 +465,52 @@ export default function Page() {
           ))}
         </div>
 
-        <div className="border-t border-amber-200 pt-8 mt-16">
-          <p className="text-center text-sm text-amber-700">
-            云南咖啡品牌档案库 (Yncafe) © 2025 | 数据来源于小红书推荐分析和市场调研
-          </p>
+        <div className="relative mt-20 pt-16">
+          <div className="absolute inset-x-0 top-0 -translate-y-1/2">
+            <div className="mx-auto h-20 w-48 rounded-full bg-gradient-to-r from-amber-200/50 via-orange-200/40 to-amber-300/40 blur-2xl" />
+          </div>
+          <div className="relative mx-auto max-w-3xl overflow-hidden rounded-3xl border border-amber-200/70 bg-gradient-to-br from-white/90 via-amber-50/80 to-white/60 p-8 shadow-[0_20px_60px_-30px_rgba(217,119,6,0.45)] backdrop-blur">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(253,230,138,0.35),transparent_55%)]" />
+            <div className="relative space-y-4 text-center text-sm leading-relaxed text-amber-900/80">
+              <p>
+                云南咖啡品牌档案库 (Yncafe) © 2025 ｜ 数据来源于小红书推荐分析调研以及 AI 深度检索结果，仅供参考，不承诺 100% 准确。
+              </p>
+              <p>
+                友情链接：
+                <a
+                  href="http://www.yunnancoffee.org/"
+                  className="ml-1 font-medium text-amber-700 underline decoration-amber-400/60 underline-offset-4 transition-colors hover:text-amber-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  云南省咖啡行业协会
+                </a>
+              </p>
+              <p>
+                联系方式：
+                <span className="font-medium text-amber-900">小红书 ID</span>
+                <a
+                  href="https://www.xiaohongshu.com/user/profile/57cd2578bd0da578807789ae"
+                  className="ml-1 inline-flex items-center gap-1 rounded-full bg-amber-100/70 px-3 py-1 text-amber-800 transition-colors hover:bg-amber-200/80"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  PbEeNiG
+                </a>
+              </p>
+              <p>
+                开源地址：
+                <a
+                  href="https://github.com/pbeenigg/yncafe"
+                  className="ml-1 inline-flex items-center gap-1 font-medium text-amber-700 underline decoration-amber-400/60 underline-offset-4 transition-colors hover:text-amber-900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YnCafe on GitHub
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
