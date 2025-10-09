@@ -6,7 +6,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Yunnan Coffee Brand Archive',
-  description: '云南咖啡品牌档案（仅供参考）',
+  description: '云南咖啡品牌档案库（仅供参考）',
   generator: 'PbEeNiG',
 }
 
