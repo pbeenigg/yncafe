@@ -24,16 +24,16 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@8ade135a3e0e9f0934c651bd0efb91d7080f3c2a
+        uses: actions/checkout@v4
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@c5ba7f7862a0f64c1b1a05fbac13e0b8e86ba08c
+        uses: pnpm/action-setup@v4
         with:
           version: 10.8.0
           run_install: false
 
       - name: Setup Node.js
-        uses: actions/setup-node@5c2988b69c79f024a5b7cb5016312158cd0a5f5d
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
@@ -47,10 +47,10 @@ jobs:
           GITHUB_PAGES: 'true'
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@f218851a3b8a4f7f4af1baa71ccb141eee6e7f5e
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
       - name: Deploy to GitHub Pages
         id: deploy
-        uses: actions/deploy-pages@c7d193f32ed19c79793bd0b7274b5fc4b135dc7c
+        uses: actions/deploy-pages@v4
