@@ -5,9 +5,9 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'Yunnan Coffee Brand Archive',
+  description: '云南咖啡品牌档案（仅供参考）',
+  generator: 'PbEeNiG',
 }
 
 export default function RootLayout({
