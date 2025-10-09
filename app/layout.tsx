@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Yunnan Coffee Brand Archive',
-  description: '云南咖啡品牌档案库（仅供参考）',
+  title: 'Yunnan Coffee Brand Archive (Yncafe)',
+  description: '云南咖啡品牌档案库（Yncafe）',
   generator: 'PbEeNiG',
 }
 

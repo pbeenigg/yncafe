@@ -329,7 +329,7 @@ export default function Page() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Coffee className="w-10 h-10 sm:w-14 sm:h-14 text-amber-700" />
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-amber-900 text-balance">
-              云南咖啡品牌档案库
+              云南咖啡品牌档案库 (Yncafe)
             </h1>
           </div>
           <p className="text-base sm:text-lg text-amber-700">探索云南精品咖啡的多样风味与品牌故事</p>
@@ -467,7 +467,7 @@ export default function Page() {
 
         <div className="border-t border-amber-200 pt-8 mt-16">
           <p className="text-center text-sm text-amber-700">
-            云南咖啡品牌档案库 © 2025 | 数据来源于小红书推荐分析和市场调研
+            云南咖啡品牌档案库 (Yncafe) © 2025 | 数据来源于小红书推荐分析和市场调研
           </p>
         </div>
       </div>
