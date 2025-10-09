@@ -1,11 +1,11 @@
-# 云南咖啡品牌档案库
+# 云南咖啡品牌档案库(Yncafe)
 
 
 ### GitHub Pages 部署
 
 仓库已配置 GitHub Actions 工作流。推送到 `main` 分支或在 Actions 页面手动触发，即可自动构建并发布到 GitHub Pages。
 
-> 如果仓库不是用户名仓库，请在仓库的 **Settings → Pages** 中启用 Pages，并确保构建来源选择 **GitHub Actions**。部署完成后，访问地址通常为 `https://<你的用户名>.github.io/<仓库名>/`。
+> 如果仓库不是用户名仓库，请在仓库的 **Settings → Pages** 中启用 Pages，并确保构建来源选择 **GitHub Actions**。部署完成后，访问地址通常为 `https://<你的用户名>.github.io/<仓库名>/`  | `https://pbeenigg.github.io/yncafe/`。
 
 
 
