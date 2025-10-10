@@ -2,6 +2,39 @@
 
 **!!!  Yncafe数据来源于小红书推荐分析调研以及AI全网深度检索得出的结果，仅作参考，不保证100%正确。**
 
+
+### 技术栈
+
+#### 前端框架
+- **Next.js 15.4.7** - React 全栈框架，支持 SSG 静态生成
+- **React 19** - 用户界面构建库
+- **TypeScript 5** - 类型安全的 JavaScript 超集
+
+#### 样式与 UI
+- **Tailwind CSS 4.1.9** - 原子化 CSS 框架
+- **Shadcn/ui** - 基于 Radix UI 的组件库
+- **Radix UI** - 无样式、可访问的 UI 组件
+- **Lucide React** - 现代图标库
+- **Geist Font** - Vercel 设计的现代字体
+
+#### 开发工具
+- **ESLint 9** - 代码质量检查工具
+- **PostCSS 8.5** - CSS 后处理器
+- **PNPM** - 高效的包管理器
+
+#### 部署与 CI/CD
+- **GitHub Actions** - 自动化构建和部署
+- **GitHub Pages** - 静态网站托管
+- **Vercel Analytics** - 网站访问分析
+
+#### 项目特性
+- **静态站点生成 (SSG)** - 通过 `next export` 生成静态文件
+- **响应式设计** - 支持移动端和桌面端
+- **组件化架构** - 模块化的 React 组件设计
+- **TypeScript 严格模式** - 完整的类型安全保障
+
+
+
 ### GitHub Pages 部署
 
 仓库已配置 GitHub Actions 工作流。推送到 `main` 分支或在 Actions 页面手动触发，即可自动构建并发布到 GitHub Pages。
