@@ -4,6 +4,7 @@ import { useState, useMemo } from "react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { Coffee } from "lucide-react"
 
 const coffeeBrands = [
@@ -323,20 +324,25 @@ export default function Page() {
   ).sort()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 dark:from-amber-950 dark:via-orange-950 dark:to-yellow-950 geisha:from-pink-50 geisha:via-purple-50 geisha:to-rose-50 typica:from-green-50 typica:via-lime-50 typica:to-yellow-50 bourbon:from-purple-50 bourbon:via-indigo-50 bourbon:to-pink-50">
+      {/* 固定在顶部的主题切换按钮 */}
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="text-center mb-10 sm:mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Coffee className="w-10 h-10 sm:w-14 sm:h-14 text-amber-700" />
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-amber-900 text-balance">
+            <Coffee className="w-10 h-10 sm:w-14 sm:h-14 text-amber-700 dark:text-amber-300 geisha:text-pink-700 typica:text-green-700 bourbon:text-purple-700" />
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900 text-balance">
               云南咖啡品牌档案库 (Yncafe)
             </h1>
           </div>
-          <p className="text-base sm:text-lg text-amber-700">探索云南精品咖啡的多样风味与品牌故事</p>
+          <p className="text-base sm:text-lg text-amber-700 dark:text-amber-300 geisha:text-pink-700 typica:text-green-700 bourbon:text-purple-700">探索云南精品咖啡的多样风味与品牌故事</p>
         </div>
 
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">咖啡品牌 ({filteredBrands.length})</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900">咖啡品牌 ({filteredBrands.length})</h2>
           <div className="grid grid-cols-1 gap-4 sm:flex sm:flex-row sm:justify-end sm:gap-3">
             <Select value={selectedVariety} onValueChange={setSelectedVariety}>
               <SelectTrigger className="h-12 sm:min-w-[200px]">
@@ -368,9 +374,9 @@ export default function Page() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
           {filteredBrands.map((brand, index) => (
-            <Card key={index} className="hover:shadow-xl transition-shadow border-amber-100">
+            <Card key={index} className="hover:shadow-xl transition-shadow border-amber-100 dark:border-amber-800 dark:bg-amber-950/50 geisha:border-pink-200 geisha:bg-pink-50/80 typica:border-green-200 typica:bg-green-50/80 bourbon:border-purple-200 bourbon:bg-purple-50/80">
               <CardHeader>
-                <CardTitle className="text-xl text-amber-900">{brand.brand}</CardTitle>
+                <CardTitle className="text-xl text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900">{brand.brand}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-center gap-2">
@@ -412,7 +418,7 @@ export default function Page() {
           ))}
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900">品种风味特点</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900">品种风味特点</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-12">
           {varietyFlavors.map((item, index) => (
             <Card key={index} className="bg-gradient-to-br from-emerald-500 to-teal-600 text-white border-0 shadow-lg">
@@ -437,7 +443,7 @@ export default function Page() {
           ))}
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900">处理法说明</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900">处理法说明</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {processingMethods.map((item, index) => (
             <Card key={index} className="bg-gradient-to-br from-rose-400 to-pink-500 text-white border-0 shadow-lg">
@@ -451,7 +457,7 @@ export default function Page() {
           ))}
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900">主要产地分布</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-amber-900 dark:text-amber-100 geisha:text-pink-900 typica:text-green-900 bourbon:text-purple-900">主要产地分布</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {origins.map((item, index) => (
             <Card key={index} className="bg-gradient-to-br from-sky-400 to-blue-500 text-white border-0 shadow-lg">

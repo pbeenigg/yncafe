@@ -2,6 +2,9 @@
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant geisha (&:is(.geisha *));
+@custom-variant typica (&:is(.typica *));
+@custom-variant bourbon (&:is(.bourbon *));
 
 :root {
   --background: oklch(1 0 0);
@@ -72,6 +75,90 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* 瑰夏主题 - 花香果香，优雅粉紫色调 */
+.geisha {
+  --background: oklch(0.97 0.02 320); /* 淡粉紫背景 */
+  --foreground: oklch(0.25 0.08 320); /* 深紫色文字 */
+  --card: oklch(0.99 0.01 315);
+  --card-foreground: oklch(0.25 0.08 320);
+  --popover: oklch(0.99 0.01 315);
+  --popover-foreground: oklch(0.25 0.08 320);
+  --primary: oklch(0.55 0.15 325); /* 瑰夏花香色 */
+  --primary-foreground: oklch(0.98 0.01 315);
+  --secondary: oklch(0.88 0.04 318); /* 浅花香色 */
+  --secondary-foreground: oklch(0.35 0.08 320);
+  --muted: oklch(0.92 0.02 315);
+  --muted-foreground: oklch(0.55 0.06 320);
+  --accent: oklch(0.75 0.12 310); /* 果香色 */
+  --accent-foreground: oklch(0.25 0.08 320);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.85 0.03 315);
+  --input: oklch(0.94 0.02 318);
+  --ring: oklch(0.65 0.12 325);
+  --chart-1: oklch(0.68 0.18 325);
+  --chart-2: oklch(0.72 0.15 310);
+  --chart-3: oklch(0.65 0.20 335);
+  --chart-4: oklch(0.70 0.16 300);
+  --chart-5: oklch(0.66 0.18 315);
+}
+
+/* 铁皮卡主题 - 清新柑橘，明亮绿橙色调 */
+.typica {
+  --background: oklch(0.96 0.03 85); /* 淡柑橘绿背景 */
+  --foreground: oklch(0.25 0.08 120); /* 深绿色文字 */
+  --card: oklch(0.98 0.02 80);
+  --card-foreground: oklch(0.25 0.08 120);
+  --popover: oklch(0.98 0.02 80);
+  --popover-foreground: oklch(0.25 0.08 120);
+  --primary: oklch(0.50 0.18 95); /* 柑橘色 */
+  --primary-foreground: oklch(0.98 0.02 80);
+  --secondary: oklch(0.85 0.06 90); /* 浅柑橘色 */
+  --secondary-foreground: oklch(0.35 0.08 120);
+  --muted: oklch(0.90 0.04 85);
+  --muted-foreground: oklch(0.55 0.06 110);
+  --accent: oklch(0.72 0.15 75); /* 明亮柑橘 */
+  --accent-foreground: oklch(0.25 0.08 120);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.82 0.04 85);
+  --input: oklch(0.93 0.03 88);
+  --ring: oklch(0.60 0.15 95);
+  --chart-1: oklch(0.65 0.20 95);
+  --chart-2: oklch(0.70 0.18 110);
+  --chart-3: oklch(0.62 0.22 80);
+  --chart-4: oklch(0.68 0.19 105);
+  --chart-5: oklch(0.64 0.21 90);
+}
+
+/* 波旁主题 - 甜美巧克力，温暖紫棕色调 */
+.bourbon {
+  --background: oklch(0.95 0.03 280); /* 淡紫棕背景 */
+  --foreground: oklch(0.25 0.06 270); /* 深紫棕文字 */
+  --card: oklch(0.97 0.02 275);
+  --card-foreground: oklch(0.25 0.06 270);
+  --popover: oklch(0.97 0.02 275);
+  --popover-foreground: oklch(0.25 0.06 270);
+  --primary: oklch(0.48 0.14 285); /* 巧克力紫色 */
+  --primary-foreground: oklch(0.97 0.02 275);
+  --secondary: oklch(0.82 0.05 280); /* 浅巧克力色 */
+  --secondary-foreground: oklch(0.35 0.06 270);
+  --muted: oklch(0.88 0.03 278);
+  --muted-foreground: oklch(0.55 0.05 275);
+  --accent: oklch(0.70 0.12 290); /* 甜美紫色 */
+  --accent-foreground: oklch(0.25 0.06 270);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.80 0.04 278);
+  --input: oklch(0.91 0.03 280);
+  --ring: oklch(0.58 0.12 285);
+  --chart-1: oklch(0.62 0.16 285);
+  --chart-2: oklch(0.68 0.14 295);
+  --chart-3: oklch(0.60 0.18 275);
+  --chart-4: oklch(0.66 0.15 300);
+  --chart-5: oklch(0.64 0.17 280);
 }
 
 @theme inline {
